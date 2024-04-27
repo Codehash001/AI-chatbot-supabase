@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import datasetData from '../data.json'
 import {
     Accordion,
     AccordionHeader,
