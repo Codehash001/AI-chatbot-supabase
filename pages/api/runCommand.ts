@@ -17,7 +17,7 @@ export default async function handler(
   if (req.method === 'POST') {
     (async () => {
       await run();
-      console.log('ingestion complete');
+      return res.status(200).send('ingested');
     })();
   } else {
     return res.status(405).send('Method not allowed');
