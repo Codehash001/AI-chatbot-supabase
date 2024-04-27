@@ -15,7 +15,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     }
 
     // External URL from where you want to download the file
-    const externalUrl = `${process.env.SUPABASE_URL}/storage/v1/object/public/files/${FileName}`;
+    const externalUrl = `https://tohjtbydvwdnckwjekkr.supabase.co/storage/v1/object/public/files/${FileName}`;
     console.log(externalUrl)
 
     const response = await fetch(externalUrl);
